@@ -1,6 +1,6 @@
 # elm-classnames
 
-A simple utility for conditionally joining html classes together.  Essentially an Elm port of (JedWatson's)[https://github.com/JedWatson] excellent javascript (classnames)[https://github.com/JedWatson/classnames] library.
+A simple utility for conditionally joining html classes together.  Essentially an Elm port of [JedWatson's](https://github.com/JedWatson) excellent javascript [classnames](https://github.com/JedWatson/classnames) library.
 
 ## Usage
 
