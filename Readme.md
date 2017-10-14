@@ -4,7 +4,7 @@ A simple utility for conditionally joining html classes together.  Essentially a
 
 ## Usage
 
-This utility helps simply the generation of html className strings based on one or more conditions.  As the number of conditions grows, this can become more challenging to manage.  By passing a list of `(String, Bool)` tuples to the exposed `classNames` function, this becomes much easer.
+This utility helps simplify the generation of html class strings based on one or more conditions.  As the number of conditions grows, this can become more challenging to manage.  By passing a list of `(String, Bool)` tuples to the exposed `classNames` function, this becomes much easer.
 
 ```elm
 import Html exposing (Html, div, text)
