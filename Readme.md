@@ -4,7 +4,7 @@ A simple utility for conditionally joining html classes together.  Essentially a
 
 ## Usage
 
-This utility helps simply the generation of html className strings based on one or more conditions.  As the number of conditions grows, this can become more challenging to manage.  By passing a list of `(String, Bool)` tuples to the exposed ` function, this becomes much easer.
+This utility helps simply the generation of html className strings based on one or more conditions.  As the number of conditions grows, this can become more challenging to manage.  By passing a list of `(String, Bool)` tuples to the exposed `classNames` function, this becomes much easer.
 
 ```elm
 import Html exposing (Html, div, text)
@@ -17,7 +17,7 @@ view isActive isSelected =
     let
         itemClasses =
             classNames
-                [("item", True) -- This class should always be assigned.
+                [ ("item", True) -- This class should always be assigned.
                 , ("is-active", isActive) -- `is-active` will be added when isActive == True
                 , ("is-selected, isSelected) -- `is-selected` will be added when isSelected == True
                 ]
