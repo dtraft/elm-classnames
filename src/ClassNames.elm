@@ -19,8 +19,9 @@ module ClassNames exposing (classNames)
     -- Outputs 'item is-selected` when isSelected == True
 -}
 classNames : List ( String, Bool ) -> String
-classNames =
-    List.foldl getClassIfActive ""
+classNames conditionalClasses =
+    List.foldl getClassIfActive "" conditionalClasses
+        |> String.trim
 
 
 getClassIfActive : ( String, Bool ) -> String -> String
